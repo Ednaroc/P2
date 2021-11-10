@@ -66,13 +66,62 @@ h1 {
     }
 }
 
+.container {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(4, 1fr);
+    grid-template-areas: 
+    "h h h h"
+    "h h h h"
+    "a a a b"
+    "a a a b"
+    "a a a b"
+    "a a a b"
+    "c c c c"
+    "c c c c"
+    "c c c c"
+    "f f f f"
+;
+}
+header {
+    grid-area: h;
+    background-color: #D0021B;
+}
+section#a {
+    grid-area: a;
+    background-color: #9013FE;
+}
+section#b {
+    grid-area: b;
+    background-color: #F8E71C;
+}
+section#c {
+    grid-area: c;
+    background-color: orange;
+}
+footer {
+    grid-area: f;
+    background-color: #50E3C2;
+}
+
+
 .main {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    /*grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;*/
-    grid-auto-rows: 1fr;
-    grid-gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+    text-align: center;
+    background-color: #A0D2DB;
+    border: 1px solid #031c41;
+    margin: 20px 0px;
+    padding: 10px 10px;
+}
+.date {
+    background-color: #47e2fd;
+    border: 1px solid #7b8ca5;
+    text-align: center;
+}
+.main div:nth-child(3) {
+    background-color: palegreen;
 }
 
 .second {
@@ -85,34 +134,27 @@ h1 {
     grid-template: repeat(3, 1fr) / repeat(4, 1fr);
     grid-auto-rows: 1fr;
     grid-gap: 10%;
+    margin: 20px 0px;
 }
 #one {
     grid-column: 1 / -1;
     background: blue;
 }
-
 #two {
     grid-row: 2 / span 2;
     background-color: orangered;
 }
-
 #three {
     background-color: palegreen;
 }
-
 #four {
     grid-column: 3 / span 1;
     grid-row: 2 / span 2;
     background-color: palevioletred;
 }
-
 #five {
     background-color: purple;
 }
-
-#six {
-}
-
 #seven {
     background-color: yellowgreen;
 }
