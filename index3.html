@@ -8,14 +8,17 @@
         <meta name="keywords" content="holidays, accomodation, activity">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- LINKS TO CSS FILE ("STYLESHEET") AND SITE ICON -->
-        <link href="css/style.css" type="text/css" rel="stylesheet">
+        <link href="css/style-clean.css" type="text/css" rel="stylesheet">
         <link href="images/logo/Booki.png" type="image/x-icon" rel="shortcut icon" >
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
         
-            <nav class="nav-header">
+        <nav class="nav-header">
                 <!-- <div class="logo"><img src="images/logo/Booki@3x.png" alt="Logo"></a></div> -->
                 <!-- <div></div> -->
                 <!-- <div class="nav-item"><a href="#C1">Accommodations</a></div> -->
@@ -23,22 +26,34 @@
                 <div class="logo"><a href="#"><img src="images/logo/Booki@3x.png" alt="Logo"></a></div>
                 <a class="nav-item" href="#S1">Accommodations</a>
                 <a class="nav-item" href="#S3">Activities</a>
-            </nav>
-        <header>
-            <div class="intro-text">
-                <h1>Find a place for your dream vacation</h1>
-                <p>Donwtown or in nature</p>
-            </div>
-
-            <!-- do I need this div here? -->
-            <div class="search-bar">
-                <form class="search-form" action="#">
-                    <button class="b-map" type="submit"><i class="fas fa-map-marker-alt"></i></button>
-                    <input type="text" placeholder="Marseille, France" name="Search">
-                    <button class="b-search" type="submit"><span>Search</span><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-
+        </nav>
+        <header class="intro-text">
+            <h1>Find a place for your dream vacation</h1>
+            <p>Donwtown or in nature</p>
+        </header>
+        <nav class="search-bar">
+            <form class="search-form" action="#">
+                <button class="b-map" type="submit"><i class="fas fa-map-marker-alt"></i></button>
+                <input type="text" placeholder="Marseille, France" name="Search">
+                <button class="b-search" type="submit"><span>Search</span><i class="fas fa-search"></i></button>
+            </form>
+        </nav> 
+        <nav class="filtering">
+            <!-- <div class="filter">
+                <div class="filterText">Filters</div>
+                <div class="filterBox f1">
+                    <div class="f1"><i class="fas fa-money-bill-wave"></i>
+                    </div>Low Cost</div>
+                <div class="filterBox f1">
+                    <div class="f1"><i class="fas fa-money-bill-wave"></i>
+                    </div>Family-friendly</div>
+                <div class="filterBox f1">
+                    <div class="f1"><i class="fas fa-money-bill-wave"></i>
+                    </div>Romantic</div>
+                <div class="filterBox f1">
+                    <div class="f1"><i class="fas fa-money-bill-wave"></i>
+                    </div>Pets allowed</div>
+            </div> -->
             <div class="filter">
                 <h3>Filters</h3>
                 <button class="b-filter">
@@ -53,37 +68,29 @@
                 <button class="b-filter">
                     <i class="fas fa-dog"></i>
                     <span>Pets allowed</span></button>
-            </div>
-                <!-- <button class="b-filter" onclick="filterSelection('cheap')"> -->
-                <!-- <button class="b-filter" data-filter="cheap"> -->
-                    <!-- <button>
-                        <i class="fas fa-money-bill-wave"></i>
-                        <div class="testt">Low cost</div></button>
-                    <button>
-                        <div><i class="fas fa-child"></i></div>
-                        <span>Family-friendly</span></button>
-                    <button>
-                        <div><i class="fas fa-child"></i></div>
-                        <div class="testt">Family-friendly</div></button> -->
-            
-            <div class="info-text">
+            </div>    
+                
+
+                    
+            <div class="filter-result">
                 <i class="fas fa-info"></i>
                 <p>More than <span>500</span> accommodations are available in this city</p>
             </div>
-        </header>
+        </nav>    
+        
+        
 
-        <!-- Which semantic elements should I use? -->
-        <!-- <main></main> -->
-        <!-- <section></section> -->
+
         <div class="main-section">
-            <div class="section-1">
-                <h3 id="S1">Accommodations in Marseille</h3>
+            <!-- <h2 id="S1">Accommodations in Marseille</h2> -->
+            <section class="section-1">
+                <h2 id="S1">Accommodations in Marseille</h2>
                 <div class="card Acc cheap family">
                     <a href="#">
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Auberge la Cannebiere</h4>
-                            <p>Night starting at <strong>25€</strong></p>
+                            <p>Night starting at <b>25€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></footer>
                         </div>
                     </a>
@@ -93,7 +100,7 @@
                         <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Hotel du port</h4>
-                            <p>Night starting at <strong>52€</strong></p>
+                            <p>Night starting at <b>52€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></footer>
                         </div>
                     </a>
@@ -103,7 +110,7 @@
                         <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Les mouettes Hotel</h4>
-                            <p>Night starting at <strong>76€</strong></p>
+                            <p>Night starting at <b>76€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></footer>
                         </div>
                     </a>
@@ -113,7 +120,7 @@
                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Hotel de la mer</h4>
-                            <p>Night starting at <strong>46€</strong></p>
+                            <p>Night starting at <b>46€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></footer>
                         </div>
                     </a>
@@ -123,7 +130,7 @@
                         <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Auberge Le Panier</h4>
-                            <p>Night starting at <strong>23€</strong></p>
+                            <p>Night starting at <b>23€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></footer>
                         </div>
                     </a>
@@ -133,23 +140,23 @@
                         <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Hotel chez Amina</h4>
-                            <p>Night starting at <strong>96€</strong></p>
+                            <p>Night starting at <b>96€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></footer>
                         </div>
                     </a>
                 </div>
                 <h3><a href="#">Show more</a></h3>
-            </div>
-            <div class="section-2">
+            </section>
+            <section class="section-2">
                 <div class="S2-title">
-                    <h3>Most Popular</h3><i class="fas fa-chart-line fa-4x"></i>
+                    <h2>Most Popular</h2><i class="fas fa-chart-line fa-lg"></i>
                 </div>
                 <div class="card Mp">
                     <a href="#">
                         <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Morning Sun Hotel</h4>
-                            <p>Night starting at <strong>128€</strong></p>
+                            <p>Night starting at <b>128€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span></footer>
                         </div>
                     </a>
@@ -159,7 +166,7 @@
                         <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Au coeur de l'eau Bed and Breakfast</h4>
-                            <p>Night starting at <strong>71€</strong></p>
+                            <p>Night starting at <b>71€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></footer>
                         </div>
                     </a>
@@ -169,16 +176,16 @@
                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Bed">
                         <div class="card-body">
                             <h4>Tout bleu et Blanc Hotel</h4>
-                            <p>Night starting at <strong>68€</strong></p>
+                            <p>Night starting at <b>68€</b></p>
                             <footer><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span></footer>
                         </div>
                     </a>
                 </div>
-            </div>
+            </section>
         </div>
 
-        <section>
-            <h3 id="S3">Activities in Marseille</h3>
+        <section class="minor-section">
+            <h2 id="S3">Activities in Marseille</h2>
             <div class="section-3">
             <!-- <div class="activitiesBox">
                 <a href="#">
@@ -219,7 +226,7 @@
             </ul>
             <ul class="nav2">
                 <li class="li-title"><a href="#">Our Accommodations</a></li>
-                <li><a href="#">Quality Assesment</a></li>
+                <li><a href="#">Quality Assessment</a></li>
                 <li><a href="#">You have a hotel?</a></li>
             </ul>
             <ul class="nav2">
